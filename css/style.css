@@ -172,7 +172,7 @@ body {
   font-size: 14px;
 }
 
-body._lock {
+body.lock {
   overflow: hidden;
 }
 
