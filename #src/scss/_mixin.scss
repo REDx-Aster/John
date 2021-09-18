@@ -1,0 +1,49 @@
+@mixin anim($time, $deley) {
+  -webkit-transition: all $time ease $deley;
+  -moz-transition: all $time ease $deley;
+  -ms-transition: all $time ease $deley;
+  -o-transition: all $time ease $deley;
+}
+@mixin rotate($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+}
+@mixin scale($num) {
+  -webkit-transform: scale($num);
+  -moz-transform: scale($num);
+  -ms-transform: scale($num);
+  -o-transform: scale($num);
+}
+
+@mixin tr($x, $y, $z) {
+  transform: translate3d($x, $y, $z);
+  -webkit-transform: translate3d($x, $y, $z);
+  -ms-transform: translate3d($x, $y, $z);
+  -o-transform: translate3d($x, $y, $z);
+}
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+}
+@mixin flexorder($val) {
+  order: $val;
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+}
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url('../fonts/#{$file_name}.woff') format('woff'),
+      url('../fonts/#{$file_name}.woff2') format('woff2');
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}

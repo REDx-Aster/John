@@ -1,0 +1,229 @@
+.hello {
+  padding: 30px 0px 70px 0px;
+  @media (max-width: $md1+px) {
+    padding: 0px 0px 70px 0px;
+  }
+  @media (max-width: $md3+px) {
+    padding: 0px 0px 60px 0px;
+  }
+  // .hello__container
+
+  &__container {
+    display: flex;
+    @media (max-width: $md3+px) {
+      text-align: center;
+      flex-direction: column-reverse;
+    }
+  }
+
+  // .hello__content
+
+  &__content {
+    align-items: flex-start;
+    padding: 18px 110px 0px 0px;
+    flex: 1 1 100%;
+    *:last-child {
+      margin-bottom: 0px;
+    }
+    @media (max-width: $md1+px) {
+      padding: 18px 50px 0px 0px;
+    }
+    @media (max-width: $md3+px) {
+      padding: 0px 0px 0px 0px;
+    }
+  }
+
+  // .hello__title
+
+  &__title {
+    margin: 0px 0px 25px 0px;
+    @media (max-width: $md3+px) {
+      margin: 0px 0px 20px 0px;
+    }
+  }
+
+  // .hello__text
+
+  &__text {
+    padding: 0px 15px;
+    margin: 0px 0px 35px 0px;
+    @media (max-width: $md3+px) {
+      margin: 0px 0px 25px 0px;
+    }
+  }
+
+  // .hello__btn
+
+  &__btn {
+    margin: 0px 0px 25px 0px;
+    @media (max-width: $md3+px) {
+      margin: 0px 0px 20px 0px;
+    }
+  }
+
+  // .hello__avatar
+
+  &__avatar {
+    flex: 0 0 244px;
+    width: 244px;
+    height: 244px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: -5px 15px 0px 0px #edf7fa;
+    img {
+      max-width: 100;
+    }
+    @media (max-width: $md3+px) {
+      width: 170px;
+      height: 170px;
+      margin: 0px 0px 40px 0px;
+    }
+  }
+}
+//========================================================================================================================//
+.recent-posts {
+  padding: 25px 0px 12px 0px;
+  background: #edf7fa;
+  @media (max-width: $md3+px) {
+    padding: 25px 0px 22px 0px;
+  }
+  // .recent-posts__container
+
+  &__container {
+  }
+
+  // .recent-posts__header
+
+  &__header {
+    display: flex;
+    margin: 0px 0px 20px 0px;
+  }
+
+  // .recent-posts__title
+
+  &__title {
+    padding: 0px 20px 0px 0px;
+    flex: 1 1 auto;
+    @media (max-width: $md3+px) {
+      padding: 0px 0px 0px 0px;
+    }
+  }
+
+  // .recent-posts__view-all
+
+  &__view-all {
+    flex: 0 0 auto;
+    font-size: 16px;
+    line-height: math.div(24, 16) * 100%;
+    color: #00a8cc;
+    @media (max-width: $md3+px) {
+      display: none;
+    }
+  }
+
+  // .recent-posts__items
+
+  &__items {
+    margin: 0px -10px;
+    @media (min-width: $md3+px) {
+      display: flex;
+    }
+  }
+
+  // .recent-posts__column
+
+  &__column {
+    flex: 0 1 50%;
+    padding: 0px 10px;
+    margin: 0px 0px 18px 0px;
+  }
+
+  // .recent-posts__item
+
+  &__item {
+  }
+}
+
+.recent-post {
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(180, 225, 250, 0.25);
+  border-radius: 4px;
+  padding: 20px;
+  // .recent-post__title
+  @media (max-width: $md3+px) {
+    padding: 15px;
+  }
+  *:last-child {
+    margin-bottom: 0;
+  }
+  &__title {
+    display: inline-block;
+    color: inherit;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: math.div(38, 26) * 100%;
+    transition: color 0.3s ease 0s;
+    margin: 0px 0px 18px 0px;
+    @media (min-width: $md2+px) {
+      &:hover {
+        color: #ff6464;
+      }
+    }
+    @media (max-width: $md3+px) {
+      font-size: 22px;
+      margin: 0px 0px 10px 0px;
+    }
+  }
+
+  // .recent-post__info
+
+  &__info {
+    margin: 0px 0px 15px 0px;
+    font-size: 18px;
+    line-height: math.div(26, 18) * 100%;
+    span {
+      margin: 0px 10px;
+    }
+    @media (max-width: $md3+px) {
+      font-size: 16px;
+      margin: 0px 0px 10px 0px;
+    }
+  }
+
+  // .recent-post__text
+
+  &__text {
+    margin: 0px 0px 15px 0px;
+  }
+}
+//========================================================================================================================//
+.featured-works {
+  padding: 30px 0px 80px 0px;
+  @media (max-width: $md3+px) {
+    padding: 30px 0px 30px 0px;
+  }
+  // .featured-works__container
+
+  &__container {
+  }
+
+  // .featured-works__title
+
+  &__title {
+    margin: 0px 0px 20px 0px;
+  }
+
+  // .featured-works__items
+
+  &__items {
+    @media (max-width: $md3+px) {
+      display: flex;
+      overflow: auto;
+      .works__item {
+        flex: 0 0 90%;
+        margin: 0px 15px 0px 0px;
+      }
+    }
+  }
+}
