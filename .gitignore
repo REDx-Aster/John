@@ -1,9 +1,10 @@
 /#src
-/node_modules
-/fonts
-/package-lock.json
-/css
-/fonts
-/img
-/js
+node_modules
+css
+fonts
+img
+js
+package-lock.json
+
+
 
