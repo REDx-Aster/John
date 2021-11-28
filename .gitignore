@@ -1,6 +1,9 @@
-.src/
-/css/
-/fonts/
-/img/
-/js/
-node_modules
+/#src
+/node_modules
+/fonts
+/package-lock.json
+/css
+/fonts
+/img
+/js
+
