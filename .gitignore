@@ -1,6 +1,6 @@
-#src
-css
-fonts
-img
-js
-node_modules
+.src/
+css/
+fonts/
+img/
+js/
+node_modules/
